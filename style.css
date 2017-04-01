@@ -4,12 +4,6 @@ body
 	font-family:'Lato', sans-serif;
 	margin:0;
 }
-#t01
-{
-	width:1200px;
-	margin-left:auto;
-	margin-right:auto;
-}
 #htop
 {
 	background-color:#333333;
@@ -25,6 +19,12 @@ h1.logo
 	height:50px;
 	padding:20px;
 	letter-spacing:5px;
+}
+#t01
+{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
 }
 table, th, td
 {
@@ -70,25 +70,57 @@ table > tbody > tr > td:first-child
 {
 	font-weight:700;
 }
+aside
+{
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
 .changelog
 {
 	font-size:15px;
 	color:#e6e6e6;
-	width:1200px;
-	margin-left:auto;
-	margin-right:auto;
+	width:300px;
+	height:500px;
+	text-align:left;
+	overflow-x:auto;
 }
 p
 {
 	margin-top:15px;
 	margin-bottom:15px;
+	margin-left:10px;
+}
+footer
+{
+	background-color:#333333;
 }
 #rights
 {
+	width:1200px;
 	color:#e6e6e6;
-	background-color:#333333;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	padding: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:20px;
 }
+/*RWD start*/
+@media all and (max-width:1024px)
+{
+	#rights, .changelog, .logo, aside
+	{
+		width:auto;
+		padding:15px;
+	}
+}
+@media screen and (max-width:1024px) {
+	.rwd-table {
+		overflow-x:scroll;
+	}
+}
+@media screen and (min-width:1024px) {
+	table {
+		width:auto;
+	}
+}
+/*RWD end*/
