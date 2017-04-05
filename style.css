@@ -80,16 +80,17 @@ aside
 {
 	font-size:15px;
 	color:#e6e6e6;
-	width:300px;
-	height:500px;
 	text-align:left;
-	overflow-x:auto;
+	width:300px;
 }
 p
 {
+	border:1px dotted #000;
+	border-radius:10px;
 	margin-top:15px;
 	margin-bottom:15px;
 	margin-left:10px;
+	padding:5px;
 }
 footer
 {
@@ -107,14 +108,19 @@ footer
 /*RWD start*/
 @media all and (max-width:1024px)
 {
-	#rights, .changelog, .logo, aside
+	#rights, .logo, aside
 	{
 		width:auto;
 		padding:15px;
 	}
+	.changelog
+	{
+		width:300px;
+	}
 }
 @media screen and (max-width:1024px) {
-	.rwd-table {
+	.rwd-table
+	{
 		overflow-x:scroll;
 	}
 }
