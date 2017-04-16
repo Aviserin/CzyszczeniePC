@@ -223,7 +223,7 @@ a.powrot
 	-moz-box-shadow: 5px 5px 5px 0px #333333;
 	-webkit-box-shadow: 5px 5px 5px 0px #333333;
 	box-shadow: 5px 5px 5px 0px #333333;
-	background-color:#ab6f3b;
+	background-color:#be7b41;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
@@ -237,7 +237,7 @@ a.powrot
 }
 a.powrot:hover
 {
-	background-color:#be7b41;
+	background-color:#ab6f3b;
 }
 a.powrot:active
 {
@@ -283,6 +283,20 @@ ol > li
 }
 ul > li
 {
-	padding-left:0;
+	margin-top:2px;
+	margin-bottom:2px;
 	list-style-type:square;
 }
+/*
+span.bold
+{
+	font-weight:700;
+}
+mark
+{
+	color:#e6e6e6;
+    background-color: #ab6f3b;
+	border-radius:10px;
+	padding:0 5px;
+}
+*/
