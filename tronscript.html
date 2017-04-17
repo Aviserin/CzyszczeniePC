@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TronScript - zautomatyzuj 85% działań - CzyszczeniePC</title>
+		<meta name="description" content="Tron to skrypt, który 'walczy dla użytkownika'. To darmowy skrypt open-source, który automatyzuje proces dezynfekcji i czyszczenia systemów Windows.">
+		<meta name="keywords" content="zautomatyzuj, 85%, czyszczenie, pc, adwcleaner, ccleaner, java, se, runtime, environment, junkware, removal, tool, malwarebytes, anti, malware, tronscript, pchunter, combofix, autoruns, aswmbr, adsspy, defraggler, adobe, reader, flash, player, telemetria, sophos, toolbar">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header id="htop">
+			<h1 class="logo">CzyszczeniePC</h1>
+		</header>
+		<main>
+			<section>
+				<div id="oprogramie">
+					<header>
+						<h2>TronScript</h2>
+					</header>
+						<p>TronScript - to skrypt, który <q>walczy dla użytkownika</q> (ang. <em>fight for the user</em>). To darmowy skrypt <abbr title="Otwarte oprogramowanie">open-source</abbr>, który automatyzuje proces dezynfekcji i czyszczenia systemów Windows.<br>
+						Celem Tron'a jest źle działający systemu Windows (zasobożerne programy, zainfekowany system itp.) i zautomatyzowanie około 85% działań związanych z dezynfekcją, usuwaniem zasobożernych programów i zasadniczo zoptymalizowania systemu aby działał znów jak zaraz po świeżej instalacji.</p>
+						<p><strong>Przebieg działania skryptu Tron</strong>:</p>
+							<ol start="0">
+								<li>Wstęp:
+									<ul>
+										<li>Tworzenie punktu przywracania systemu.</li>
+										<li>Rkill.</li>
+										<li>ProcessKiller.</li>
+										<li>Naprawa <abbr title="Windows Management Instrumentation">WMI</abbr>.</li>
+										<li>McAfee Stinger.</li>
+										<li>TDSSKiller.</li>
+										<li>Usunięcie starych punków przywracania systemu.</li>
+										<li>Kopia zapasowa rejestru.</li>
+										<li><em>Czyszczenie</em> <abbr title="Volume Shadow Copy Service">VSS</abbr>.</li>
+									</ul></li>
+								<li>Usuwanie tymczasowych plików:
+									<ul>
+										<li><em>Czyszczenie</em> Internet Explorer.</li>
+										<li>Narzędzie <a class="artlink" href="ccleaner.html" title="CCleaner">CCleaner</a>.</li>
+										<li>Narzędzie BleachBit.</li>
+										<li>TempFileCleanup.bat.</li>
+										<li>USB Device Cleanup.</li>
+										<li>Zduplikowane pliki.</li>
+										<li>Dziennik zdarzeń Windows.</li>
+										<li>Usługi aktualizacje Windows.</li>
+									</ul></li>
+								<li>Usuwanie zbędnych programów:
+									<ul>
+										<li>Programy <abbr title="Original Equipment Manufacturer">OEM</abbr>.</li>
+										<li>Toolbary/<abbr title="Browser Helper Object">BHO</abbr>.</li>
+										<li>Metro jeśli nie jest używany.</li>
+										<li>OneDrive jeśli nie jest używany.</li>
+									</ul></li>
+								<li>Dezynfekcja:
+									<ul>
+										<li><em>Czyszczenie</em> pamięci CryptNet SSL.</li>
+										<li><a class="artlink" href="mbam.html" title="Malwarebytes Anti-Malware">Malwarebytes Anti-Malware</a>.</li>
+										<li><abbr title="Kaspersky Virus Removal Tool">KVRT</abbr>.</li>
+										<li>Sophos Virus Removal Tool.</li>
+									</ul></li>
+								<li>Naprawa:
+									<ul>
+										<li>Windows Installer.</li>
+										<li><abbr title="Deployment Image Servicing and Management">DISM</abbr>.</li>
+										<li>Reset uprawnień rejestru.</li>
+										<li>Reset uprawnień plików.</li>
+										<li>System File Checker.</li>
+										<li>chkdsk.</li>
+										<li>Wyłączenie Telemetrii.</li>
+										<li>Wyłączenie migracji do Windows 10.</li>
+										<li>Sieć.</li>
+										<li>Rozszerzenia plików.</li>
+									</ul></li>
+								<li>Łatki:
+									<ul>
+										<li>7-Zip.</li>
+										<li>Adobe Flash Player.</li>
+										<li>Adobe Reader.</li>
+										<li><a class="artlink" href="java.html" title="Java Runtime Environment">Java Runtime Environment</a>.</li>
+										<li>Aktualizacje Windows.</li>
+										<li>Reset <abbr title="Deployment Image Servicing and Management">DISM</abbr>.</li>
+									</ul></li>
+								<li>Optymalizacja:
+									<ul>
+										<li>Plik wymiany (pagefile.sys).</li>
+										<li>Defraggler.</li>
+									</ul></li>
+								<li>Tworzenie logów.</li>
+								<li>Możliwość dadania własnych skryptów (opcjonalnie).</li>
+								<li>Ręczne narzędzia:
+									<ul>
+										<li>ADSSpy.</li>
+										<li><a class="artlink" href="adwcleaner.html" title="AdwCleaner">AdwCleaner</a>.</li>
+										<li>aswMBR.</li>
+										<li>autoruns.</li>
+										<li>ComboFix.</li>
+										<li>PCHunter.</li>
+										<li><a class="artlink" href="jrt.html" title="Junkware Removal Tool">Junkware Removal Tool</a>.</li>
+										<li>Net Adapter Repair.</li>
+										<li>ServicesRepair.</li>
+										<li>Tron Reset Tool.</li>
+										<li>VirusTotal uploader tool.</li>
+									</ul></li>
+							</ol>
+						<p>Projekt <strong>TronScript</strong> budowany jest z dużym naciskiem na wkład społeczność REDDIT i regularnie aktualizowany.<br><b>Uwaga</b>: w zależności od stanu naszego komputera, poziomu infekcji, zapełnienia dysków oraz sprzętu, TronScript może działać nawet od 4 do 6 godzin.</p>
+					<header>
+						<h3>Dodatkowe informacje:</h3>
+					</header>
+						<div class="info">
+							<p>Autor: vocatus (przy współpracy ze społecznością REDDIT).<br>
+							System operacyjny: Windows 2003 / 2008 / 2012 / XP / Vista / 7 / 8 / 8.1 / 10 (32-64bit)<br>
+							Licencja: Bezpłatna (Freeware)</p>
+						</div>
+				</div>
+				<div style="clear:both;"></div>
+				<div id="back">
+					<a class="powrot" href="index.html" title="Wróc na stronę główną">&#8592; wstecz</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div id="rights">
+				Wszystkie prawa zastrzeżone &copy; 2017 <strong>CzyszczeniePC</strong> All right reserved.
+			</div>
+		</footer>
+	</body>
+</html>

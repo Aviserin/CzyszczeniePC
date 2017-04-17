@@ -1,8 +1,19 @@
+html, body
+{
+	margin:0;
+	padding:0;
+}
+html
+{
+	height:100%;
+}
 body
 {
+	min-height:100%;
+	position:relative;
 	background-color:#4d4d4d;
 	font-family:'Lato', sans-serif;
-	margin:0;
+	color:#e6e6e6;
 }
 #htop
 {
@@ -12,63 +23,84 @@ h1.logo
 {
 	margin-top:0;
 	margin-bottom:15px;
-	color:#eeeeee;
 	text-align:center;
-	font-size:35px;
+	font-size:34px;
 	font-weight:700;
 	height:50px;
 	padding:20px;
 	letter-spacing:5px;
+	border-bottom:1px solid black;
+}
+h2
+{
+	text-align:center;
+	letter-spacing:2px;
+	font-size:28px;
+	padding:15px;
+	margin:0;
+}
+h3
+{
+	letter-spacing:1px;
+	font-size:22px;
+	padding:10px;
+	margin:0;
 }
 #t01
 {
 	width:1200px;
 	margin-left:auto;
 	margin-right:auto;
-}
-table, th, td
-{
-	border:1px solid #000000;
+	table-layout:fixed;
 	border-collapse:collapse;
+	-webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
+	-moz-box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
+	box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
 }
 th, td
 {
-	padding:3px;
+	padding:6px 12px;
 }
 table#t01 tr:nth-child(even)
 {
-	background-color:#cccccc;
+	background-color:#e9e9e9;
 }
 table#t01 tr:nth-child(odd)
 {
-	background-color:#f2f2f2;
+	background-color:#f6f6f6;
 }
-table > thead, tfoot
+table > tfoot > tr > td
 {
-	text-align:center;
 	font-weight:700;
+	background-color:#333333;
+}
+table > thead > tr > th
+{
+	font-weight:700;
+	background-color:#333333;
+	text-align:left;
 }
 table > tbody > tr > td > a:link
 {
-	color:#000000;
+	color:#3b3b3b;
 	text-decoration:none;
 }
 table > tbody > tr > td > a:visited
 {
-	color:#000000;
+	color:#3b3b3b;
 }
 table > tbody > tr > td > a:hover
 {
-	color:#e60000;
-	text-decoration:underline;
+	color:#3b3b3b;
+	text-shadow: 0 0 3px #3b3b3b;
 }
 table > tbody > tr > td > a:active
 {
-	color:#000000;
+	color:#3b3b3b;
 }
 table > tbody > tr > td:first-child
 {
-	font-weight:700;
+	color:#3b3b3b;
 }
 aside
 {
@@ -78,55 +110,180 @@ aside
 }
 .changelog
 {
+	margin-top:5px;
 	font-size:15px;
-	color:#e6e6e6;
 	text-align:left;
 	width:300px;
+	padding-bottom:65px;	/* Wysokość stopki ostatni element przed stopką */
 }
-p
+.changelog > p
 {
-	border:1px dotted #000;
 	border-radius:10px;
-	margin-top:15px;
-	margin-bottom:15px;
-	margin-left:10px;
-	padding:5px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	margin:15px 0 15px 10px;
+	padding:10px;
+	-webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
+	-moz-box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
+	box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
 }
+/*przyklejenie stopki do dołu strony */
 footer
 {
 	background-color:#333333;
+	position:fixed;
+	left:0;
+	bottom:0;
+	clear:both;
+	z-index:0;
+	width:100%;
+	height:50px;	/* Wysokość stopki */
+	border-top:1px solid black;
 }
 #rights
 {
-	width:1200px;
-	color:#e6e6e6;
+	width:1170px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
-	padding:20px;
+	padding:10px;
+	font-size:small;
 }
 /*RWD start*/
-@media all and (max-width:1024px)
+@media all and (max-width:1200px)
 {
-	#rights, .logo, aside
+	#rights
 	{
 		width:auto;
-		padding:15px;
 	}
-	.changelog
+	aside
 	{
-		width:300px;
+		width:auto;
+		padding:10px;
+	}
+	#oprogramie
+	{
+		width:auto!important;
 	}
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px)
+{
 	.rwd-table
 	{
 		overflow-x:scroll;
 	}
 }
-@media screen and (min-width:1024px) {
-	table {
+@media screen and (min-width:1200px)
+{
+	table
+	{
 		width:auto;
 	}
 }
 /*RWD end*/
+.program
+{
+	cursor:help;
+}
+#oprogramie
+{
+	-webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
+	-moz-box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
+	box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
+	background-color:#333333;
+	border-radius:10px;
+	font-size:18px;
+	text-align:justify;
+	margin-top:15px;
+	padding:15px;
+	width:1170px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#oprogramie > img
+{
+	float:right;
+	margin:0 0 15px 15px;
+}
+#oprogramie > p
+{
+	padding:10px;
+}
+#back
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:135px;
+	height:38px;
+	margin-top:20px;
+	padding-bottom:70px;	/* Wysokość stopki ostatni element przed stopką margines */
+}
+a.powrot
+{
+	-moz-box-shadow: 5px 5px 5px 0px #333333;
+	-webkit-box-shadow: 5px 5px 5px 0px #333333;
+	box-shadow: 5px 5px 5px 0px #333333;
+	background-color:#be7b41;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:7px 30px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #000000;
+}
+a.powrot:hover
+{
+	background-color:#ab6f3b;
+}
+a.powrot:active
+{
+	position:relative;
+	top:1px;
+}
+a.artlink:link
+{
+	color:#e4b36a;
+	text-decoration:none;
+	font-style:italic;
+}
+a.artlink:visited
+{
+	color:#e4b36a;
+}
+a.artlink:hover
+{
+	color:#ff9800;
+}
+a.artlink:active
+{
+	color:#e4b36a;
+}
+.info
+{
+	font-size:16px;
+	padding:10px;
+}
+abbr
+{
+	cursor:help;
+	border-bottom:1px dotted #58f7a6;
+}
+ol
+{
+	margin-left:10px;
+	list-style-type:decimal;
+}
+ol > li
+{
+	padding-left:5px;
+}
+ul > li
+{
+	margin-top:2px;
+	margin-bottom:2px;
+	list-style-type:square;
+}
