@@ -21,8 +21,7 @@ body
 }
 h1.logo
 {
-	margin-top:0;
-	margin-bottom:15px;
+	margin:0 0 15px 0;
 	text-align:center;
 	font-size:34px;
 	font-weight:700;
@@ -109,7 +108,7 @@ aside
 	font-size:15px;
 	text-align:left;
 	width:300px;
-	padding-bottom:65px;	/* Wysokosc stopki, ostatni element przed stopka */
+	padding-bottom:50px;	/*main page sticked footer 50px+15px margin*/
 }
 .changelog > p
 {
@@ -119,28 +118,26 @@ aside
 	box-shadow:0px 0px 10px 0px rgba(0,0,0,1);
     line-height:20px;
 }
-/*przyklejenie stopki do dolu strony */
+/*sticked footer start*/
 footer
 {
 	background-color:#333333;
 	position:fixed;
 	left:0;
 	bottom:0;
-	clear:both;
-	z-index:1;
 	width:100%;
-	height:50px;	/* Wysokosc stopki */
+	height:50px;	/* footer height */
 	border-top:1px solid black;
 }
 #rights
 {
 	width:1168px;
 	text-align:center;
-    vertical-align:middle;
     margin:0 auto;
 	padding:16px;
 	font-size:small;
 }
+/*sticked footer end*/
 .program
 {
 	cursor:help;
@@ -152,15 +149,14 @@ footer
 	border-radius:10px;
 	font-size:18px;
 	text-align:justify;
-	margin-top:15px;
+	margin:15px auto 0;
 	padding:15px;
 	width:1170px;
-    margin:0 auto;
 }
 #oprogramie > img
 {
 	float:right;
-	margin:0 0 15px 15px;
+	margin:30px 0 15px 15px;
 }
 #oprogramie > p
 {
@@ -168,12 +164,10 @@ footer
 }
 #back
 {
-	margin-left:auto;
-	margin-right:auto;
+	margin:15px auto 0;
 	width:135px;
 	height:38px;
-	margin-top:20px;
-	padding-bottom:70px;	/* Wysokosc stopki, ostatni element przed stopka margines */
+	padding-bottom:65px;	/*program page - sticked footer 50px+15px margin*/
 }
 a.powrot
 {
@@ -263,8 +257,7 @@ ol > li
 }
 ul > li
 {
-	margin-top:2px;
-	margin-bottom:2px;
+	margin:2px 0;
 	list-style-type:square;
 }
 /*RWD start*/
